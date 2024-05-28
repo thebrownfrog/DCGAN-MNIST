@@ -1,11 +1,13 @@
 # DCGAN-MNIST
 DCGAN trained on MNIST handwritten digits dataset with pytorch
+
 (!)Model is not being saved after training
 
 to run, a GPU is required. 
 
 # Training info
 epochs:128
+
 learning rates:
 - discriminator: 0.0001
 - generator: 0.0002
