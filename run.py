@@ -225,5 +225,5 @@ for epoch in range(epochs):
     test_epoch_time, test_d_loss, test_g_loss = process_data(test_loader, False, test_data_length)
     total_time += train_epoch_time
     total_time += test_epoch_time
-    print(f"epoch {epoch} ended(in {train_epoch_time+test_epoch_time:.1f}, total={total_time:.1f}). train,test d_loss={train_d_loss:.4f},{test_d_loss:.4f}. train,test g_loss={train_g_loss:.4f},{test_g_loss:.4f}")
+    print(f"epoch {epoch} ended(in {train_epoch_time+test_epoch_time:.1f}s, total={total_time:.1f}s). train,test d_loss={train_d_loss:.4f},{test_d_loss:.4f}. train,test g_loss={train_g_loss:.4f},{test_g_loss:.4f}")
     save_image(gan.generator(showcase_noise),f"showcase_epoch{epoch}.png")
