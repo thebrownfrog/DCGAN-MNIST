@@ -9,6 +9,7 @@ epochs:128
 learning rates:
 - discriminator: 0.0001
 - generator: 0.0002
+
 batch size:250
 # architectures
 generator has 510337 parameters(it could propably be lower). discriminator has 78171. Further details about the specific architecture can be seen in the code.
