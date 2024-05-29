@@ -135,7 +135,7 @@ class GAN:
         if train:
             self.discriminator.train()
             self.generator.train()
-        elif train:
+        else:
             self.discriminator.eval()
             self.generator.eval()
 
